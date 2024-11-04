@@ -5,10 +5,10 @@ local palette = {
   sumiInk0 = "#282828",
   sumiInk1 = "#181820",
   sumiInk2 = "#1a1a22",
-  sumiInk3 = "#1F1F28",
+  sumiInk3 = "#282828",
   sumiInk4 = "#2A2A37",
   sumiInk5 = "#363646",
-  sumiInk6 = "#54546D",   --fg
+  sumiInk6 = "#54546D", --fg
 
   -- Popup and Floats
   waveBlue1 = "#223249",
@@ -40,8 +40,8 @@ local palette = {
   springViolet1 = "#938AA9",
   springViolet2 = "#9CABCA",
   springBlue = "#7FB4CA",
-  lightBlue = "#A3D4D5",   -- unused yet
-  waveAqua2 = "#7AA89F",   -- improve lightness: desaturated greenish Aqua
+  lightBlue = "#A3D4D5", -- unused yet
+  waveAqua2 = "#7AA89F", -- improve lightness: desaturated greenish Aqua
 
   -- waveAqua2  = "#68AD99",
   -- waveAqua4  = "#7AA880",
@@ -82,7 +82,7 @@ local palette = {
   dragonAqua = "#8ea4a2",
   dragonAsh = "#737c73",
   dragonTeal = "#949fb5",
-  dragonYellow = "#c4b28a",   --"#a99c8b",
+  dragonYellow = "#c4b28a", --"#a99c8b",
   -- "#8a9aa3",
 
   lotusInk1 = "#545464",
@@ -139,11 +139,11 @@ local M = {}
 function M.setup(opts)
   opts = opts or {}
   local override_colors = opts.colors or require("kanagawa").config.colors
-  local theme = opts.theme or require("kanagawa")._CURRENT_THEME   -- WARN: this fails if called before kanagawa.load()
+  local theme = opts.theme or require("kanagawa")._CURRENT_THEME -- WARN: this fails if called before kanagawa.load()
 
   if not theme then
     error(
-    "kanagawa.colors.setup(): Unable to infer `theme`. Either specify a theme or call this function after ':colorscheme kanagawa'")
+      "kanagawa.colors.setup(): Unable to infer `theme`. Either specify a theme or call this function after ':colorscheme kanagawa'")
   end
 
   -- Add to and/or override palette_colors
