@@ -3,10 +3,10 @@ local palette = {
 
   -- Bg Shades
   sumiInk0 = "#282828",
-  sumiInk1 = "#181820",
-  sumiInk2 = "#1a1a22",
+  sumiInk1 = "#3c3836",
+  sumiInk2 = "#504945",
   sumiInk3 = "#282828",
-  sumiInk4 = "#2A2A37",
+  sumiInk4 = "#7c6f64",
   sumiInk5 = "#363646",
   sumiInk6 = "#54546D", --fg
 
